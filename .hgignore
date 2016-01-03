@@ -2,3 +2,4 @@
 ^gtfs2json/.*\.pyc
 ^tmp/.*
 ^ui/json/.*\.json
+^console.js

@@ -222,7 +222,7 @@ function ControllerTrip(map) {
         state.lastArrivalSeconds =
             state.timesAndDistances[state.timesAndDistances.length - 1].arrival * 60;
         state.marker = map.addMarker(tripPath, gtfsTrip.getShapeId(), tripTypeInfo.isVisible,
-                                     tripTypeInfo.color);
+                                     tripTypeInfo.color, gtfsTrip.getName());
         state.startTime = gtfsTrip.getStartTime();
         state.tripType = gtfsTrip.getType();
         state.tripInfo =
